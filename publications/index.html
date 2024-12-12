@@ -1,0 +1,35 @@
+---
+layout: default
+title: Publications
+---
+
+<div class="wrapper">
+  <section id="publications">
+    <h2>{{page.title}}</h2>
+    {% assign this_year = "" %}
+    {% for pub in site.data.publications %}
+        {% if pub.year != this_year %}
+            {% if this_year != "" %}
+            {% endif %}
+            {% assign this_year = pub.year %}
+            <h4 class="section-header">{{pub.year}}</h4>
+            <hr>
+        {% endif %}
+            
+        <ul style="margin-left: 20px;">
+            <li class="pubs-item">
+                <span class="pubs">
+                    <span class="pubs-title" style="color:var(--color-green);">
+                      <strong>{{pub.title}}</strong>
+                    </span><br>
+                    {{pub.authors}}
+                    <br>
+                    {{pub.journal}} - ({{pub.year}})
+                    </br>
+                    <a class="pubs-link" href="{{ pub.link }}" target="_blank">Read more</a>
+                </span>
+            </li>
+        </ul>
+    {% endfor %}
+  </section>
+</div>
