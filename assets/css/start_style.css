@@ -1,0 +1,241 @@
+/**
+ * Reset some basic elements
+ */
+
+ :root{
+    --color-white: #f0f0f0;
+    --color-red: #be3144;
+    --color-blue: #45567d;
+    --color-gray: #303841;
+    --color-light-grey: #8d9196;
+    --color-green: #568b5f;
+  }
+
+  body,main, h1, h2, h3, h4, h5, h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /**
+   * Basic styling
+   */
+  body {
+    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #111;
+    background-color: #fdfdfd;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /**
+   * Set `margin-bottom` to maintain vertical rhythm
+   */
+  h1, h2, h3, h4, h5, h6,
+  p{
+    margin-bottom: 15px;
+  }
+  
+  /**
+   * `main` element
+   */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-grey);
+    background-image: linear-gradient(52deg, #3a3d40 0%, #181719 100%);
+  }
+  
+
+
+  
+  /**
+   * Wrapper
+   */
+  .wrapper {
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - 30px * 2);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  
+  /**
+   * Site header
+   */
+
+.site-header { 
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid var(--color-gray);
+    background: var(--color-green);
+    min-height: 35.95px;
+    position: relative;
+  }
+
+
+/**
+* Page content
+*/
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    flex: 1;
+    padding-top: 20px; 
+    margin: 0;
+}
+
+
+.site-header + .page-content {
+  padding-top: 20px;
+}
+
+.start-content{
+    text-align: center;
+}
+
+.picture {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px auto; 
+    width: 71%;
+    max-width: 301px; 
+    aspect-ratio: 1 / 1; 
+    border: solid 2px #ffffff;
+    border-radius: 50%; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Maintains aspect ratio while covering the circle */
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.picture:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+
+.picture:hover {
+    box-shadow: 10px -10px 15px var(--color-green);
+}
+
+.inner {
+    text-align: center;
+    border-top: solid 1px var(--color-white);
+    border-bottom: solid 1px var(--color-white);
+}
+
+.inner > p
+{
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-green);
+}
+  
+.inner > h1{
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--color-light-grey)
+}
+
+
+.page-link {
+    margin: 5px;
+    line-height: 1.5;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: var(--color-green);
+    border-color: var(--color-gray);
+    color: var(--color-grey);
+    text-decoration: none;
+  }
+
+.nav-list {
+    margin: 20px;
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+  }
+
+  
+  
+/**
+   * Site footer
+*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.site-footer {
+    border-top: 5px solid var(--color-green);
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    padding-top: 10px;
+}
+
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin-left: -15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    }
+
+.footer-wrapper .footer-left {
+    text-align: left;
+}
+
+.footer-wrapper .footer-right {
+    text-align: right;
+}
+  
+ 
+
+
+  
