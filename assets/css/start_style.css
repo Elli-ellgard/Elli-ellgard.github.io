@@ -9,7 +9,8 @@
     --color-gray: #303841;
     --color-light-grey: #8d9196;
     --color-green: #568b5f;
-  }
+    --footer-height: 55px; 
+ }
 
   body,main, h1, h2, h3, h4, h5, h6,
   p {
@@ -235,7 +236,9 @@ footer{
     text-align: right;
 }
   
- 
+ .page-content{
+  margin-bottom: calc(var(--footer-height) + 10px);  
+ }
 
 
   
