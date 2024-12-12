@@ -187,7 +187,7 @@
 .page-link:hover {
     background-color: var(--color-green);
     border-color: var(--color-gray);
-    color: var(--color-grey);
+    color: var(--color-gray);
     text-decoration: none;
   }
 
