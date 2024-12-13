@@ -568,6 +568,81 @@ footer{
   font-size: 24px;
 }
 
+
+/* ABOUT*/
+
+.about-section {
+  margin-bottom: 20px;
+  width: 100%; 
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 0; 
+  flex-wrap: wrap; 
+  font-size: 13px;
+}
+
+.col {
+  flex: 0 0 var(--col-width, 100%); /* Set flex-basis to the variable width */
+  height: auto;
+}
+
+.picture {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: auto auto; 
+  width: 81%;
+  max-width: 301px; 
+  aspect-ratio: 1 / 1; 
+  border: solid 2px #ffffff;
+  border-radius: 50%; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Maintains aspect ratio while covering the circle */
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.picture:hover img {
+  transform: scale(1.1); 
+  filter: brightness(1.2); 
+}
+
+.picture:hover {
+  box-shadow: 10px -10px 15px var(--color-green);
+}
+
+
+.description {
+  padding: 10px 5px 5px 15px; /* Add padding for better readability */
+  text-align: left; /* Align text to the left */
+}
+
+@media screen and (max-width: 800px) {
+  .about-section {
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px;
+  }
+
+  .col {
+    flex: 0 0 100%; 
+  }
+
+  .picture {
+    margin-bottom: 20px; /* Add spacing between image and text */
+  }
+}
+
+
+
 /**
  * Publications
  */
@@ -577,19 +652,34 @@ footer{
   padding: 0;
 }
 
-#publications .section-header{
+.section-header{
   margin: 15px 0 0 0;
   font-weight: 500;
   color: var(--color-gray);
   border-left: 1px solid var(--color-gray);
   padding-left: 10px;
+  position: relative;
+  text-align: left; 
 }
 
-#publications >hr {
+.section-header::after {
+  content: '';
+  display: block;
+  width: 10%; 
+  height: 2px; 
+  background-color: var(--color-gray); 
+  margin: 0 0; 
+  position: absolute;
+  bottom: -2px; 
+  left: -1px;
+  right: 0;
+}
+
+/*#publications hr {
   width: 10%;
   border: 1px solid var(--color-gray); 
   margin-bottom: 10px;
-}
+}*/
 
 .pubs-item {
   position: relative; 
