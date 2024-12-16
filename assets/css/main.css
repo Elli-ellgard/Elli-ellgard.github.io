@@ -310,80 +310,80 @@ table td {
     text-decoration: none;
 }
 
+.site-nav .page-link:last-child {
+  margin-right: 15px;
+}
 
-.site-nav .page-link:not(:last-child) {
-  margin-right: 5px;
+.nav-trigger {
+  display: none; 
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-gray);
+}
+
+.trigger {
+  display: block; 
 }
 
 
 @media screen and (max-width: 600px) {
-  .site-nav {
-    position: absolute;
-    top: 10px; 
-    right: 15px;
-    background-color: var(--color-green); 
-    border: 1px solid var(--color-gray);
-    border-radius: 5px;
-    text-align: right;
-    z-index: 999; 
+  .site-header {
+    height: 40px;
   }
 
-  .site-nav label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  .site-nav .menu-icon {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  .site-nav .menu-icon > svg {
-    fill: var(--color-gray); 
-  }
-
-  .site-nav input ~ .trigger {
-    clear: both;
+  .trigger {
     display: none; 
   }
 
-  .site-nav input:checked ~ .trigger {
+  .nav-list {
+    display: none; 
+    flex-direction: column;
+    position: fixed; 
+    top: 65px; 
+    right: 0; 
+    width: 30%; 
+    background-color: var(--color-green); 
+    padding: 0; 
+    margin: 0; 
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+  }
+
+  .nav-list.show {
+    display: flex; 
+  }
+
+  .page-link {
     display: block; 
-    padding-bottom: 5px;
-  }
-
-  .site-nav .trigger {
-    flex-direction: column; 
-    padding: 10px 0; 
-  }
-
-  .site-nav .nav-list {
-    flex-direction: column; 
-    padding: 0;
+    width: 100%; 
     margin: 0;
-  }
-
-  .site-nav .page-link {
-    display: block; 
-    margin: 5px 20px; 
-    padding: 10px; 
+    padding: 15px 20px; 
     text-align: left; 
+    font-size: 16px; 
+    color: var(--color-gray); 
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-gray);
+    transition: background-color 0.3s, color 0.3s;
   }
 
-  .site-nav .page-link:not(:last-child) {
-    margin-right: 0; 
+  .nav-trigger {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-right: 35px;
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-green);
+    color: var(--color-gray);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px; 
+    height: 40px; 
+    width: 40px; 
   }
 }
-
 
 
 
@@ -627,6 +627,9 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
+  .about-section{
+    font-size: 14px;
+  }
 
   .col {
     flex: 0 0 100%; 
