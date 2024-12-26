@@ -13,12 +13,13 @@ title: Publications
             {% endif %}
             {% assign this_year = pub.year %}
             <h4 class="section-header">{{pub.year}}</h4>
+            <hr>
         {% endif %}
             
         <ul style="margin-left: 20px;">
             <li class="pubs-item">
                 <span class="pubs">
-                    <span class="pubs-title">
+                    <span class="pubs-title" style="color:var(--color-green);">
                       <strong>{{pub.title}}</strong>
                     </span><br>
                     {{pub.authors}}
