@@ -1,0 +1,80 @@
+projects:
+  - name: Phylogenetic Terraces and Stands
+    description: |
+      In phylogenomics, evolutionary trees for groups of species are inferred using genetic data from multiple genes. In the presence of missing data, the solution space (tree space) divides into groups of equally optimal solutions, known as Phylogenetic Terraces.
+    keywords:
+      - phylogenomics
+      - supermatrix
+      - missing data
+      - stand
+      - terrace
+    figure: stands.png
+    bioinformatic_tools:
+      - MAFFT
+      - IQ-Tree
+      - iToL
+      - FigTree
+    data: 
+      - DNA/protein sequences
+      - multiple sequence alginment
+      - simulated & biological datasets
+    tech_dev: 
+      - Linux
+      - C++
+      - Python
+      - R
+      - bash 
+      - git 
+      - grid clusters
+   
+  - name: Saturation Test
+    description: |
+      SatuTe (Saturation Test) is a Python tool that evaluates the reliability of phylogenetic trees and their data by testing for shared information between connected subtrees to detect saturated branches.  
+    keywords:
+      - branch support
+      - phylogenetic inference 
+      - phylogenetic signal
+      - saturation
+      - tree of life
+    figure: satute.png
+    bioinformatic_tools:
+      - MAFFT
+      - IQ-Tree
+      - FigTree
+    data: 
+      - DNA/protein sequences
+      - multiple sequence alginment
+      - simulated & biological datasets
+    tech_dev: 
+      - Linux
+      - Python
+      - R
+      - bash 
+      - git 
+      - grid clusters
+
+  # - name: Metagenomics Analysis
+  #   keywords:
+  #     - microbiome
+  #     - metagenomics
+  #     - diversity analysis
+  #   figure: figures/metagenomics.png
+  #   bioinformatic_tools:
+  #     - QIIME2
+  #     - MetaPhlAn
+  #     - Kraken
+  #   description: |
+  #     Studying microbial communities by analyzing metagenomic sequencing data.
+
+  # - name: Genome Assembly
+  #   keywords:
+  #     - genome sequencing
+  #     - assembly
+  #     - scaffolding
+  #   figure: figures/genome_assembly.png
+  #   bioinformatic_tools:
+  #     - SPAdes  
+  #     - Velvet
+  #     - Canu
+  #   description: >
+  #     Building complete genome sequences from short and long-read sequencing data.

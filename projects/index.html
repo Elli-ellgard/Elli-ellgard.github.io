@@ -1,0 +1,35 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="wrapper">
+  <section id="project-section">
+    <h2>{{ page.title }}</h2>
+    {% for project in site.data.projects_overview.projects %}
+      <div class="project-card">
+        <div class="project-row">
+          {% if project.figure %}
+            <div class="project-figure-container">
+              <img src="{{ site.baseurl }}/assets/images/projects/{{ project.figure }}" alt="{{ project.name }} figure" class="project-figure">
+            </div>
+          {% endif %}
+          <div class="project-info">
+            <h4 class="project-header">{{ project.name }}</h4>
+            <p class="project-description">{{ project.description }}</p>
+            {% if project.keywords %}
+              <p class="project-skills"><strong>Keywords:</strong> {{ project.keywords | join: ", " }}</p>
+            {% endif %}
+            {% if project.bioinformatic_tools %}
+              <p class="project-skills"><strong>Bioinformatic Tools:</strong> {{ project.bioinformatic_tools | join: ", " }}</p>
+            {% endif %}
+            {% if project.data %}
+              <p class="project-skills"><strong>Data:</strong> {{ project.data | join: ", " }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+</div>
+
