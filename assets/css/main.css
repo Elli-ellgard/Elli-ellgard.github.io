@@ -385,6 +385,8 @@ table td {
   }
 }
 
+/******** Projects *******/
+
 
 .project-card {
   margin-top: 30px;
@@ -401,8 +403,10 @@ table td {
   border-radius: 5px;
 }
 
+/* Default layout for larger screens */
 .project-row {
   display: flex;
+  flex-direction: row; /* Default row layout */
   gap: 30px;
 }
 
@@ -418,6 +422,13 @@ table td {
   max-width: 100%; 
   max-height: 100%; 
   border-radius: 8px; 
+}
+
+.small-screen {
+  display: none; /* Hide small figure on larger screens */
+}
+.large-screen {
+  display: block; /* Show large figure on larger screens */
 }
 
 .project-info {
@@ -440,6 +451,31 @@ table td {
   margin: 25px 5px;
 }
 
+/* Layout for small screens */
+@media (max-width: 767px) {
+  .project-row {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .small-screen {
+    display: block; 
+  }
+
+  .large-screen {
+    display: none; 
+  }
+
+  .project-figure-container {
+    margin: 0 auto; 
+  }
+
+  .project-description {
+    margin: 10px 0 20px 0; 
+  }
+}
+
+
 .project-info .project-skills {
   margin: 0;
   margin-bottom: 5px;
@@ -458,6 +494,7 @@ table td {
 /**
  * Footer
  */
+ 
 footer{
     width: 100%;
 }

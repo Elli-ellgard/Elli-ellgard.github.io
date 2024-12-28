@@ -8,14 +8,21 @@ title: Projects
     <h2>{{ page.title }}</h2>
     {% for project in site.data.projects_overview.projects %}
       <div class="project-card">
+        <h4 class="project-header">{{ project.name }}</h4>
         <div class="project-row">
+          {% assign small_figure = project.figure | replace: ".png", "_small.png" %}
           {% if project.figure %}
-            <div class="project-figure-container">
-              <img src="{{ site.baseurl }}/assets/images/projects/{{ project.figure }}" alt="{{ project.name }} figure" class="project-figure">
-            </div>
+          <div class="project-figure-container">
+            <img src="{{ site.baseurl }}/assets/images/projects/{{ small_figure }}" 
+                  alt="{{ project.name }} small figure" 
+                  class="project-figure small-screen">
+            <img src="{{ site.baseurl }}/assets/images/projects/{{ project.figure }}" 
+                  alt="{{ project.name }} large figure" 
+                  class="project-figure large-screen">
+          </div>
           {% endif %}
           <div class="project-info">
-            <h4 class="project-header">{{ project.name }}</h4>
+            
             <p class="project-description">{{ project.description }}</p>
             {% if project.keywords %}
               <p class="project-skills"><strong>Keywords:</strong> {{ project.keywords | join: ", " }}</p>
