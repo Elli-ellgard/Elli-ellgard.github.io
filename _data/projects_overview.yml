@@ -1,5 +1,5 @@
 projects:
-  - name: Phylogenetic Terraces and Stands
+  - name: Phylogenetic Stands and Terraces
     description: |
       In phylogenomics, evolutionary trees for groups of species are inferred using genetic data from multiple genes. In the presence of missing data, the solution space (tree space) divides into groups of equally optimal solutions, known as Phylogenetic Terraces.
     keywords:
@@ -8,7 +8,7 @@ projects:
       - missing data
       - stand
       - terrace
-    figure: stands.png
+    figure: stand_and_terrace.png
     bioinformatic_tools:
       - MAFFT
       - IQ-Tree
@@ -36,7 +36,7 @@ projects:
       - phylogenetic signal
       - saturation
       - tree of life
-    figure: satute.png
+    figure: 2D_ToL_saturation.png
     bioinformatic_tools:
       - MAFFT
       - IQ-Tree
