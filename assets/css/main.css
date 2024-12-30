@@ -425,10 +425,10 @@ table td {
 }
 
 .small-screen {
-  display: none; /* Hide small figure on larger screens */
+  display: none;
 }
 .large-screen {
-  display: block; /* Show large figure on larger screens */
+  display: block; 
 }
 
 .project-info {
@@ -460,6 +460,7 @@ table td {
 
   .small-screen {
     display: block; 
+    width: 80%;
   }
 
   .large-screen {
@@ -494,7 +495,7 @@ table td {
 /**
  * Footer
  */
- 
+
 footer{
     width: 100%;
 }
