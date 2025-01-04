@@ -46,10 +46,48 @@ projects:
     tech_dev: 
       - Linux
       - Python
+      - custom pipelines
       - R
       - bash 
       - git 
       - grid clusters
+
+
+  - name: The Nature and Dynamics of rDNA Units in Arabidopsis
+    description: |
+      This cross-functional collaboration utilizes next-generation sequencing (NGS) data to explore the higher-order organization of nucleolus organizer regions (NOR2 and NOR4) in the model plant Arabidopsis thaliana. By integrating genomic and bioinformatic approaches, the project aims to uncover the nature and dynamics of rDNA units.  
+    keywords:
+      - rDNA
+      - meiosis
+      - homologous recombination
+      - evolution
+      - sequence analysis
+      - phylogenetic analysis
+    figure: rDNA_arabidopsis.png
+    bioinformatic_tools:
+      - EMBOSS
+      - IGV
+      - vcftools
+      - bedtools
+      - gatk
+      - samtools
+      - LoFreq
+      - Popart
+      - ...
+    data:  
+      - whole-genome sequencing 
+      - Illumina sequencing
+      - Nanopore sequencing
+      - BAC assemblies
+      - VCF files
+      - biological datasets
+    tech_dev: 
+      - Linux
+      - bash
+      - custom pipelines
+      - Python
+      - clusters
+
 
   - name: Phylogenetic Stands and Terraces
     description: |
@@ -78,21 +116,6 @@ projects:
       - bash 
       - git 
       - grid clusters
-  
-  # - name: Arabidopsis thaliana
-  #   description: |
-  #     project description (1-3 sentences)  
-  #   keywords:
-  #     - 3 or 5 keywords
-  #   figure: figure.png
-  #   bioinformatic_tools:
-  #     - if used
-  #   data: 
-  #     - dataset types
-  #   tech_dev: 
-  #     - Linux
-
-
   
   - name: Quasi-Symmetry
     description: |

@@ -33,6 +33,9 @@ title: Projects
             {% if project.data %}
               <p class="project-skills"><strong>Data:</strong> {{ project.data | join: ", " }}</p>
             {% endif %}
+            {% if project.tech_dev %}
+              <p class="project-skills"><strong>Tech/Dev:</strong> {{ project.tech_dev | join: ", " }}</p>
+            {% endif %}
           </div>
         </div>
       </div>
