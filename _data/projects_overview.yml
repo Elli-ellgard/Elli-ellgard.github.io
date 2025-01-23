@@ -53,9 +53,12 @@ projects:
       - grid clusters
 
 
-  - name: The Nature and Dynamics of rDNA Units in Arabidopsis
+  - name: The Nature of rDNA Units in Arabidopsis
     description: |
-      This cross-functional collaboration utilizes next-generation sequencing (NGS) data to explore the higher-order organization of nucleolus organizer regions (NOR2 and NOR4) in the model plant Arabidopsis thaliana. By integrating genomic and bioinformatic approaches, the project aims to uncover the nature and dynamics of rDNA units.  
+      This cross-functional collaboration utilizes next-generation sequencing (NGS) data 
+      to explore the higher-order organization of nucleolus organizer regions 
+      (NOR2 and NOR4) in the model plant Arabidopsis thaliana. By integrating genomic 
+      and bioinformatic approaches, the project aims to uncover the nature and dynamics of rDNA units.  
     keywords:
       - rDNA
       - meiosis
@@ -111,7 +114,6 @@ projects:
     tech_dev: 
       - Linux
       - C++
-      - Python
       - R
       - bash 
       - git 
