@@ -106,17 +106,18 @@ h2{
  * Links
  */
 a {
-  color: var(--color-gray);
+  color: var(--color-green);
   text-decoration: none;
 }
 a:visited {
-  color: #224a7e;
+  color: var(--color-gray);
 }
 a:hover {
-  color: #111;
+  color: var(--color-green);
   text-decoration: underline;
 }
 .social-media-list a:hover {
+  color: var(--color-green);
   text-decoration: none;
 }
 .social-media-list a:hover .username {

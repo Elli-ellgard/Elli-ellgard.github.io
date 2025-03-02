@@ -51,6 +51,12 @@ projects:
       - bash 
       - git 
       - grid clusters
+    links: 
+      - name: SatuTe
+        url: https://github.com/Elli-ellgard/SatuTe
+      - name: Example Analyses with SatuTe
+        url: https://github.com/Elli-ellgard/SatuTe-example-analyses
+        
 
 
   - name: The Nature of rDNA Units in Arabidopsis
@@ -118,6 +124,9 @@ projects:
       - bash 
       - git 
       - grid clusters
+    links: 
+      - name: Gentrius
+        url: https://github.com/OlgaChern/Gentrius_2023SM
   
   - name: Quasi-Symmetry
     description: |
