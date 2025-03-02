@@ -26,27 +26,21 @@ body, html {
   padding: 0;
   height: 100%; /* Ensure the body and html cover the viewport */
   display: flex;
-  flex-direction: column; /* Keep header, main, and footer stacked vertically */
+  flex-direction: column; 
+  overflow-y: auto;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center; 
-  align-items: center;    
-  height: 100vh;          
+body {     
   background-color: var(--color-grey);
   background-image: linear-gradient(52deg, #3a3d40 0%, #181719 100%);
-  overflow: hidden;       
 }
 
 main {
+  flex-grow: 1;
   display: flex;
-  flex: 1;
-  min-height: 0; 
-  padding-bottom: 20px;
-  justify-content: center; 
-  align-items: center; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
 }
 
@@ -55,17 +49,7 @@ p{
   margin-bottom: 15px;
 }
 
-/**
-  * `main` element
-  */
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;  
-}
+
 
 
 /**
@@ -89,9 +73,8 @@ main {
 .site-header { 
   width: 100%;
   padding: 10px 0;
-  border-top: 5px solid var(--color-gray);
   background-color: var(--color-green);
-  min-height: 35.95px;
+  min-height: 20px;
   text-align: center;
   position: relative;
 }
@@ -105,9 +88,9 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; 
-  flex: 1;
+  flex-grow: 1;
   padding-top: 20px; 
-  margin-bottom: var(--footer-height);
+  padding-bottom: var(--footer-height);
 }
 
 .start-content{
@@ -167,7 +150,7 @@ color: var(--color-light-grey)
   margin: 5px;
   line-height: 1.5;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 5px;
   text-decoration: none;
   color: var(--color-green);
   border: 1px solid var(--color-green);
@@ -195,10 +178,9 @@ color: var(--color-light-grey)
 */
 
 footer {
-  /*position: fixed;*/
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  margin-top: auto;
+  flex-shrink: 0; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,7 +191,6 @@ footer {
   box-sizing: border-box;
   border-top: 5px solid var(--color-green);
   padding: 5px 0;
-  z-index: 10;
 }
 
 .site-footer {
