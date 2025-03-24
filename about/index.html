@@ -1,6 +1,9 @@
 ---
 layout: default
-title: About
+title: about-section
+css_files:
+  - main.css
+  - timeline.css
 ---
 
 <div class="wrapper">
@@ -34,19 +37,57 @@ title: About
            </div>
       </div>
     </div>
+    {% assign year_range = "2009,2012,2014,2019,2024,2025" | split: "," %}
 
-      <!--<h4 class="section-header">CV</h4>
-      <div class="about-section">
-        
-        <div class="col" style="--col-width: 35%;">
+    <div class="timeline-section">
+      <h2>The Transition <span>- From Abstract Theory to Real-World Impact -</span></h2>
+      <div class="timeline-wrapper">
+        {% assign toggle = true %}
+        {% assign entries = site.data.timeline %}
+      
+        {% for year in year_range %}
+          {% assign year_entries = entries | where: "start_date", year | sort: "category" %}
           
-        </div>
-        <div class="col" style="--col-width: 64%;">
-            
-        </div>
+          <div class="timeline-year-block">
+            <div class="timeline-line">
+              <div class="year-label {% if toggle %}left{% else %}right{% endif %}">{{ year }}</div>
+              <div class="year-dot"></div>
+            </div>
+      
+            {% for entry in year_entries %}
+              <div class="timeline-entry {{ entry.category }}">
+                {% if entry.category == "education" %}
+                  <div class="content left">
+                    <p class="title"><strong>{{ entry.title }}</strong></p>
+                    {%  if entry.field %}
+                    <p class="field">{{ entry.field }}</p>
+                    {% endif %}
+                    <p class="organization">{{ entry.organization }}</p>
+                  </div>
+                {% else %}
+                  <div class="content right">
+                    <p class="title"><strong>{{ entry.title }}</strong></p>
+                    {%  if entry.field %}
+                    <p class="field">{{ entry.field }}</p>
+                    {% endif %}
+                    <p class="organization">{{ entry.organization }}</p>
+                  </div>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+      
+          {% assign toggle = toggle | not %}
+        {% endfor %}
 
-
-    </div>-->
+      </div>      
+    </div>
+    <div class="timeline-entry center ">
+      <div class="content center">
+        <p class="title"><strong>Real-World Impact</strong></p>
+        <p class="field">Transition into Industry</p>             
+      </div>
+    </div>
 
   </div>
 </div>

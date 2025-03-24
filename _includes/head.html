@@ -14,11 +14,19 @@
   <meta property="profile:last_name" content="{{ site.lastname }}">
 
   <!-- Dynamically include the CSS file -->
-  {% if include.css_file %}
+  {% if page.css_files %}
+  {% for css in page.css_files %}
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: css | prepend: site.baseurl }}">
+  {% endfor %}
+  {% else %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+  {% endif %}
+
+  <!--{% if include.css_file %}
   <link rel="stylesheet" href="{{ "/assets/css/" | append: include.css_file | prepend: site.baseurl }}">
   {% else %}
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  {% endif %}
+  {% endif %}-->
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
 </head>

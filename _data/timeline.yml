@@ -1,0 +1,60 @@
+- title: "Bachelor of Science"
+  field: "Mathematics"
+  organization: "University of Rostock"
+  start_date: 2009
+  end_date: 2012
+  category: "education"
+
+- title: "Master of Science"
+  field: "Mathematics"
+  organization: "University of Rostock"
+  start_date: 2012
+  end_date: 2014
+  category: "education"
+
+- title: "PhD Studies"
+  field: "Financial and Actuarial Mathematics"
+  organization: "TU Vienna"
+  start_date: 2014
+  end_date: 2019
+  category: "education"
+
+- title: "Project Management"
+  field: "Postgraduate Certiﬁcate"
+  organization: "University of Graz"
+  start_date: 2025
+  end_date: 2025
+  category: "education"
+
+- title: "Student Assistant"
+  organization: "University of Rostock"
+  start_date: 2012
+  end_date: 2013
+  category: "career"
+
+- title: "Research Assistant"
+  organization: "University of Rostock"
+  start_date: 2013
+  end_date: 2014
+  category: "career"
+
+- title: "Research Assistant"
+  organization: "TU Vienna"
+  start_date: 2014
+  end_date: 2019
+  category: "career"
+
+- title: "Bioinformatics  Scientist"
+  field: "PostDoc"
+  organization: "Max Perutz Labs Vienna"
+  start_date: 2019
+  end_date: 2024
+  category: "career"
+
+- title: "Teaching Assistant"
+  field: "Statistical Methods for Bioinformatics"
+  organization: "University of Vienna"
+  start_date: 2019
+  end_date: 2024
+  category: "career"
+

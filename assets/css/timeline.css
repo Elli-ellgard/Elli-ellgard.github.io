@@ -1,0 +1,155 @@
+
+.timeline-section{
+    margin-top: 50px;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+.timeline-section h2 span {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--color-light-grey);
+}
+
+
+.timeline-wrapper {
+    position: relative;
+    padding: 10px 0;
+}
+
+.timeline-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 53%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--color-gray);
+    transform: translateX(-50%);
+}
+
+.timeline-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+  
+.timeline-year-block {
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+  
+.timeline-entry.education {
+    flex-direction: row;
+}
+
+.timeline-entry.career {
+    flex-direction: row-reverse;
+}
+
+
+
+.timeline-entry .content {
+    width: 40%;
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--color-white);
+    border-left: 5px solid var(--color-green);
+    padding: 12px 15px;
+    border-radius: 6px;
+}
+
+  
+ .year-dot {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-gray);
+  border-radius: 50%;
+  position: absolute;
+  left: 53%;
+  transform: translateX(-50%);
+  z-index: 2;
+  top: 0;
+}
+
+.year-label {
+  margin-bottom: 5px;
+  position: absolute;
+  top: -8px;
+  font-weight: bold;
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+.year-label.left {
+  left: calc(53% - 50px);
+  text-align: right;
+}
+
+.year-label.right {
+  left: calc(50% + 50px);
+  text-align: left;
+}
+
+.content p {
+  margin: 0;
+}
+
+.content .title{
+    color: var(--color-blue);
+    font-size: 1.1rem;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.1;
+}
+
+.content .field{
+    font-size: 0.9rem;
+    padding: 0px;
+    padding-top: 5px;
+    margin: 0px;
+    line-height: 1.1;
+}
+
+.content .organization{
+    font-size: 0.8rem;
+    padding: 0px;
+    padding-top: 5px;
+    margin: 0px;
+    line-height: 1.1;
+}
+
+
+.timeline-entry.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    }
+
+.timeline-entry.center .content.center {
+  width: 40%;
+  max-width: 300px;
+  text-align: center;
+  border-left: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.timeline-entry.center .title{
+    color: var(--color-green);
+}
+
+.home{
+    margin-bottom: 40px;
+}
